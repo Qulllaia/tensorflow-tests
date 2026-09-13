@@ -1,0 +1,7 @@
+allowBuilds:
+  '@tensorflow/tfjs-node': true
+  canvas: false
+  core-js: false
+  esbuild: false
+overrides:
+  "danfojs-node>@tensorflow/tfjs-node": "4.22.0"
