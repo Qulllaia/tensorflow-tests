@@ -32,3 +32,12 @@ await model.fit(x_values, y_values, { epochs: 1000 }).then((history) => {
 await model.save("file://./models/my-linear-model");
 
 tf.dispose([x_values, y_values]);
+
+const loadedModel = await tf.loadLayersModel(
+  "file://./models/my-linear-model/model.json",
+);
+const answer = loadedModel.predict(tf.tensor([5, 6, 7, 8, 9, 10]));
+
+if (!Array.isArray(answer)) {
+  answer.print();
+} else console.log("wtf");

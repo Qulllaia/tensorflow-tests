@@ -17,6 +17,7 @@
     "@tensorflow/tfjs": "^4.22.0",
     "@tensorflow/tfjs-node": "^4.22.0",
     "canvas": "^3.2.3",
+    "danfojs-node": "^1.2.0",
     "fs": "0.0.1-security",
     "jimp": "^1.6.1",
     "nodemon": "^3.1.14",
